@@ -1,2 +1,5 @@
 id,date,question,decision,rationale,status
 D01,2026-09-28,Reference B3-center frame 167700 có đặt ego_body đúng không?,Chuyển Lab Coach kiểm tra reference và giữ bản r1_craft đã khóa,Polygon reference phía phải bao người và xe đạp còn thân xe gắn camera lộ ở mép trái; xem screenshots/167700_ego_body_review.png; ảnh hưởng IGNORE_SCOPE và số liệu so sánh,escalated
+D02,2026-09-28,Có nới box xe nhỏ ở frame 152940 để vượt ngưỡng 40 px không?,Giữ box ôm sát phần xe nhìn thấy và chuyển bất đồng với reference cho QA phân xử,Box rework cao 35.8 px còn box reference cao 43 px; không thêm nền ảnh chỉ để vượt ngưỡng R01,decided
+D03,2026-09-28,Xe chở khách ở mép trái frame 212280 thuộc class nào?,Đổi nhãn Car thành Bus trong bản rework,Ảnh gốc và reference R3 cho thấy xe chở khách; compare r1_craft báo L2 và R3 sai class,decided
+D04,2026-09-28,Người dắt xe ở frame 167700 cần gán nhãn thế nào?,Tách người thành Pedestrian và xe thành Bike trong bản rework,Người đang đi bộ bên cạnh xe nên áp dụng R03; QA của Tuấn cũng yêu cầu soát lại cặp người và xe này,decided
