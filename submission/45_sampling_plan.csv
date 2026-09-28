@@ -1,9 +1,9 @@
 camera_id,slice_type,frames,risk,rationale
-front,normal,,TODO,TODO
-front,hard,,TODO,TODO
-rear,normal,,TODO,TODO
-rear,hard,,TODO,TODO
-left,normal,,TODO,TODO
-left,hard,,TODO,TODO
-right,normal,,TODO,TODO
-right,hard,,TODO,TODO
+front,normal,20,Bỏ sót hoặc nhầm lớp người và xe phía trước dù nhìn rõ,Kế hoạch giả lập 200/50000 frame. Chia đều 50 mỗi camera vì chưa có thống kê lỗi. Giữ 20 ca rõ để đối chiếu với ca khó.
+front,hard,30,Bỏ sót người bị xe che hoặc box lệch khi ngược sáng ở phía trước,Dành 30 ca khó để tăng cơ hội phát hiện lỗi. Chọn nhiều cảnh và thời điểm có che khuất hoặc ngược sáng nếu có trong dữ liệu.
+rear,normal,20,Sai box hoặc nhầm lớp người và xe phía sau khi ít che khuất,Giữ 20 ca rõ của camera sau để kiểm tra lỗi cơ bản. Lấy từ nhiều đoạn thời gian và tránh các frame liên tiếp gần giống nhau.
+rear,hard,30,Bỏ sót người sau xe đỗ hoặc nhầm che khuất với cắt biên ảnh,Dành 30 ca khó phía sau để soát phần nhìn thấy và thuộc tính. Phân tán mẫu giữa các ca che khuất và cắt biên thay vì chỉ chọn một cảnh.
+left,normal,20,Bỏ sót hoặc nhầm lớp người và xe bên trái trong cảnh rõ,Giữ 20 ca rõ bên trái để đủ độ phủ bốn hướng. Soát danh sách mẫu theo lớp đối tượng và cảnh để tránh chỉ có một loại xe.
+left,hard,30,Box lệch do méo rìa hoặc xử lý trùng sai tại vùng chồng trước-trái và sau-trái,Dành 30 ca khó cho méo rìa và cả hai vùng chồng bên trái. Giữ timestamp và calibration khi đối chiếu. Không tự ghép hoặc xoá box khi chưa có policy.
+right,normal,20,Bỏ sót người hoặc xe bên phải trong cảnh rõ và ít che khuất,Giữ 20 ca rõ bên phải với mức phủ ngang bên trái vì chưa có bằng chứng hướng nào lỗi nhiều hơn. Ảnh một camera ADASIND không đại diện bốn hướng.
+right,hard,30,Box lệch ở rìa hoặc bỏ sót vật bị che tại vùng chồng trước-phải và sau-phải,Dành 30 ca khó cho che khuất và cả hai vùng chồng bên phải. Soát đủ tám nhóm và điều chỉnh giả định sau P4. Tỷ lệ 20/30 phục vụ tìm lỗi chứ không ước lượng tần suất thực tế.

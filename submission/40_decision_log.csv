@@ -1,1 +1,2 @@
 id,date,question,decision,rationale,status
+D01,2026-09-28,Reference B3-center frame 167700 có đặt ego_body đúng không?,Chuyển Lab Coach kiểm tra reference và giữ bản r1_craft đã khóa,Polygon reference phía phải bao người và xe đạp còn thân xe gắn camera lộ ở mép trái; xem screenshots/167700_ego_body_review.png; ảnh hưởng IGNORE_SCOPE và số liệu so sánh,escalated
