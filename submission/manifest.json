@@ -167,8 +167,8 @@
     },
     {
       "file": "40_decision_log.csv",
-      "lines": 2,
-      "sha256": "48b75b93bb5746747fc7f22d8a968a5bb780de7a2c24095b2e3f304fa2f25e51"
+      "lines": 5,
+      "sha256": "e790a41e2631345b8b0ae6772beacfbee759f19392fb7716f8e7b0adbea19ba6"
     },
     {
       "file": "45_review_plan.md",
@@ -191,7 +191,5 @@
       "sha256": "65f3e5b6c979176a4d60ecc6f3c918d3db9454e70231e9d276c6f7e216f05b5a"
     }
   ],
-  "failed_gates": [
-    "decision log cần ≥4 entry và ≥1 escalated"
-  ]
+  "failed_gates": []
 }
